@@ -7,3 +7,8 @@
 * Version: 0.0.1
 * License: GLPv2
 */
+
+//Exit if accessed directly
+if( !defined('ABSPATH')){
+  exit;
+}
