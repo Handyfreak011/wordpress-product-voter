@@ -13,4 +13,4 @@ if( !defined('ABSPATH')){
   exit;
 }
 
-require 'product-voter-cpt.php';
+require_once(plugin_dir_path(__FILE__)) .  'product-voter-cpt.php';
