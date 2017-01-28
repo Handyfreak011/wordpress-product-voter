@@ -12,3 +12,5 @@
 if( !defined('ABSPATH')){
   exit;
 }
+
+require 'product-voter-cpt.php';

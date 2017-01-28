@@ -5,6 +5,7 @@ function iddt_register_site_post_type(){
 
   $singular = 'Produktart';
   $plural = 'Produktarten';
+  $slug = str_replace( ' ', '_', strtolower( $singular ) );
 
   $labels = array(
     'name'               => $plural,
