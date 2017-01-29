@@ -40,7 +40,6 @@ function iddt_register_site_post_type(){
     'supports' => array(
       'title',
       'editor',
-      'author',
       'thumbnail',
       'costum-fields',
       'comments',
