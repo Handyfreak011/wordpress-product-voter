@@ -37,6 +37,7 @@ function iddt_register_site_post_type(){
     'capability_type' => 'page',
     'map_meta_cap' => true,
     'hierarchical' => true,
+    'has_archive' => true,
     'supports' => array(
       'title',
       'editor',
@@ -96,5 +97,4 @@ function iddt_register_taxonomy_upper_groups(){
 	}
 
 add_action('init', 'iddt_register_taxonomy_upper_groups');
-
 ?>
