@@ -32,4 +32,18 @@ function iddt_voter_admin_enqueue_scripts(){
 }
 
 add_action('admin_enqueue_scripts', 'iddt_voter_admin_enqueue_scripts');
+
+
+
+function iddt_voter_add_submenu_page(){
+  add_submenu_page(
+    'edit.php?post_type=produktart',
+    'Produktarten Einstellungen',
+    'Einstellungen',
+    'manage_options',
+    'produktarten_einstellungen',
+    'iddt_voter_render_admin');
+}
+
+add_action('admin_menu', 'iddt_voter_add_submenu_page');
 ?>
