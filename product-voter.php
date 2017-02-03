@@ -14,7 +14,7 @@ if( !defined('ABSPATH')){
 }
 
 require_once(plugin_dir_path(__FILE__)) .  'product-voter-cpt.php';
-require_once(plugin_dir_path(__FILE__)) .  'product-voter-render-admin.php';
+require_once(plugin_dir_path(__FILE__)) .  'product-voter-settings.php';
 require_once(plugin_dir_path(__FILE__)) .  'project-voter-fields.php';
 
 

@@ -6,12 +6,12 @@ function iddt_voter_add_submenu_page(){
     'Einstellungen',
     'manage_options',
     'produktarten_einstellungen',
-    'iddt_voter_render_admin');
+    'iddt_voter_submenu_settings_callback');
 }
 
 add_action('admin_menu', 'iddt_voter_add_submenu_page');
 
-function iddt_voter_render_admin(){
+function iddt_voter_submenu_settings_callback(){
   echo "Bald wird es möglich sein hier Einstellungen zum CPT zu treffen!";
 }
 
