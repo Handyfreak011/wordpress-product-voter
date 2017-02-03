@@ -1,6 +1,8 @@
 
 <?php
 
+
+
 function iddt_register_site_post_type(){
 
   $singular = 'Produktart';
@@ -96,5 +98,41 @@ function iddt_register_taxonomy_upper_groups(){
 	register_taxonomy('obergruppe', 'produktart', $args);
 	}
 
-add_action('init', 'iddt_register_taxonomy_upper_groups');
+  add_action('init', 'iddt_register_taxonomy_upper_groups');
+
+//   function iddt_register_taxonomy_companies(){
+//     $singular = 'Firma';
+//     $plural = 'Firmen';
+//   	$slug = str_replace(' ', '_', strtolower($singular));
+//
+//     $labels = array(
+//       'name' => $plural,
+//       'singular_name' => $singular,
+//       'menu_name' => $plural,
+//       'all_items' => 'Alle ' . $plural,
+//       'edit_item' => 'Bearbeite ' . $singular,
+//       'view_item' => 'Sehe ' . $singular . ' an',
+//       'update_item' => 'Update' . $singular,
+//       'add_new_item' => 'Füge neue ' . $singular . ' hinzu',
+//       'new_item_name' => 'Name der neuen ' . $singular,
+//       'search_items' => 'Suche ' . $plural,
+//       'separate_items_with_commas' => 'Trenne die ' . $plural . ' mit Kommas',
+//       'add_or_remove_items' => 'Füge neue ' . $singular . ' hinzu oder lösche sie',
+//       'not_found' => 'Keine ' . $plural . ' gefunden',
+//     );
+//     $args = array(
+//   		'hierarchical' => false,
+//   		'labels' => $labels,
+//   		'show_ui' => true,
+//   		'show_admin_column' => true,
+//   		'update_count_callback' => '_update_post_term_count',
+//   		'query_var' => true,
+//   		'rewrite' => array(
+//   			'slug' => $slug
+//   		) ,
+//   	);
+//   	register_taxonomy('firma', 'produktart', $args);
+//   	}
+//
+// add_action('init', 'iddt_register_taxonomy_companies');
 ?>
